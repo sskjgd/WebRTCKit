@@ -40,13 +40,16 @@ Open source iOS implementation of WebRTC without the need for proprietary closed
 ##How can I use this in my app?
 
 - add the cocoapod to your Podfile 
+    
     pod 'WebRTCKit', '~>0.0.1'
 
 Or
 
 
--add this repository as a git submodule to your project
+- add this repository as a git submodule to your project
+        
     git submodule add git@github.com:johnnyclem/WebRTCKit.git
+
 
 - the framework leverages AVFoundation's didOutputSampleBuffer delegate method: 
     **create an AVCaptureSession like you normally would with AVFoundation
