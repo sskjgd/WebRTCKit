@@ -27,7 +27,9 @@ Open source iOS implementation of WebRTC without the need for proprietary closed
 
 - While the OpenTok SDK is full-featured and well implemented, it relies on an account with a 3rd party provider and uses a proprietary API, meaning that interoperability outside of the OpenTok ecosystem is difficult if not impossible.
 
-- WebRTC promises to provide a unified, cross-platform, plugin-free W3C standard for audio/video chat and broadcast as well as low-level P2P data/audio/video exchange. While implementing WebRTC with a proprietary 3rd party vendor makes it easy to cobble together a proof-of-concept, WebRTC can and should be as open and extensible as the other web standards we've come to know and love like HTML, TCP and WebSockets.
+- WebRTC promises to provide a unified, cross-platform, plugin-free W3C standard for audio/video chat and broadcast as well as low-level P2P data/audio/video exchange. While implementing WebRTC with a proprietary 3rd party vendor makes it easy to cobble together a proof-of-concept
+
+- WebRTC can and should be as open and extensible as the other web standards we've come to know and love like HTML, TCP and WebSockets.
 
 
 ##What is currently implemented?
@@ -52,11 +54,16 @@ Or
 
 
 - the framework leverages AVFoundation's didOutputSampleBuffer delegate method: 
-    **create an AVCaptureSession like you normally would with AVFoundation
-    **choose your device, session settings (resolution, min/max framerates, video codec, etc)
-    **import the WebRTCKit.h header file
-    **create a new WebRTCKit object and set it as the delegate for your AVCaptureSession
-    **point WebRTC kit at your signaling/session management server
+    
+-- create an AVCaptureSession like you normally would with AVFoundation
+
+-- choose your device, session settings (resolution, min/max framerates, video codec, etc)
+
+-- import the WebRTCKit.h header file
+
+-- create a new WebRTCKit object and set it as the delegate for your AVCaptureSession
+
+-- point WebRTC kit at your signaling/session management server
 
 
 ##How can I help?
