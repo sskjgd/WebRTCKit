@@ -60,14 +60,20 @@ Or
 - choose your device, session settings (resolution, min/max framerates, video codec, etc)
 
 - import the WebRTCKit.h header file
+
 ```#import <WebRTCKit/WebRTCKit.h>```
 
 - create a new WebRTCKit object and set it as the delegate for your AVCaptureSession
+
 ```WebRTCKit *webby = [[WebRTCKit alloc] init];```
+
 ```self.session.delegate = webby;```
 
+
 - point WebRTC kit at your signaling/session management server
+
 ```webby.signalingURL = [NSURL URLWithString:@"http://mysignalingserver.com"];```
+
 
 ##How can I help?
 
