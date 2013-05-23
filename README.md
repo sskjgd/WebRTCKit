@@ -48,7 +48,7 @@ Or
 
 - add this repository as a git submodule to your project
         
-    git submodule add git@github.com:johnnyclem/WebRTCKit.git
+    ```git submodule add git@github.com:johnnyclem/WebRTCKit.git```
 
 
 - the framework leverages AVFoundation's didOutputSampleBuffer delegate method: 
