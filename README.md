@@ -53,18 +53,21 @@ Or
     ```git submodule add git@github.com:johnnyclem/WebRTCKit.git```
 
 
-- the framework leverages AVFoundation's didOutputSampleBuffer delegate method: 
+- implement your camera capture session with AVFoundation. WebRTCKit leverages AVFoundation's didOutputSampleBuffer delegate method
     
--- create an AVCaptureSession like you normally would with AVFoundation
+- create an AVCaptureSession like you normally would with AVFoundation
 
--- choose your device, session settings (resolution, min/max framerates, video codec, etc)
+- choose your device, session settings (resolution, min/max framerates, video codec, etc)
 
--- import the WebRTCKit.h header file
+- import the WebRTCKit.h header file
+```#import <WebRTCKit/WebRTCKit.h>```
 
--- create a new WebRTCKit object and set it as the delegate for your AVCaptureSession
+- create a new WebRTCKit object and set it as the delegate for your AVCaptureSession
+```WebRTCKit *webby = [[WebRTCKit alloc] init];```
+```self.session.delegate = webby;```
 
--- point WebRTC kit at your signaling/session management server
-
+- point WebRTC kit at your signaling/session management server
+```webby.signalingURL = [NSURL URLWithString:@"http://mysignalingserver.com"];```
 
 ##How can I help?
 
