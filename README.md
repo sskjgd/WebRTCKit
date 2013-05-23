@@ -41,7 +41,7 @@ Open source iOS implementation of WebRTC without the need for proprietary closed
 
 - add the cocoapod to your Podfile 
     
-    pod 'WebRTCKit', '~>0.0.1'
+    ```pod 'WebRTCKit', '~>0.0.1'```
 
 Or
 
