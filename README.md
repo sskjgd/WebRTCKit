@@ -1,4 +1,4 @@
-WebRTCKit
+WebRTCKit - code will be here in the repo once the initial implementation is completed
 =========
 
 Open source iOS implementation of WebRTC without the need for proprietary closed-source SDKs or 3rd party web services
